@@ -20,7 +20,7 @@ public class Employer extends AbstractEntity {
 //    one employer to many jobs
     @OneToMany
 //    this will make a column for the foreign key to Job table. This will connect to Employer class primary key.
-    @JoinColumn(name = "Employer_id")
+    @JoinColumn(name = "employer_id")
     private final List<Job> jobs = new ArrayList<>();
 
 //adds public access to employer
